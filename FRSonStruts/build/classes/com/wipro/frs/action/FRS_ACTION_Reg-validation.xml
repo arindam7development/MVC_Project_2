@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="profilebean.firstName">
+		<field-validator type="requiredstring">
+			<message>Enter First Name</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.lastName">
+		<field-validator type="requiredstring">
+			<message>Enter Last Name</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.dateOfBirth">
+		<field-validator type="date">
+			<message>Enter DateOfBirth</message>
+		</field-validator>
+		<field-validator type="date">
+			<param name="min">1990/01/01</param>
+			<param name="max">2010/01/01</param>
+			<message>date of birth</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.gender">
+		<field-validator type="requiredstring">
+			<message>Enter Gender</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.street">
+		<field-validator type="requiredstring">
+			<message>Enter Street</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.location">
+		<field-validator type="requiredstring">
+			<message>Enter Location</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.city">
+		<field-validator type="requiredstring">
+			<message>Enter City</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.state">
+		<field-validator type="requiredstring">
+			<message>Enter State</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.pincode">
+		<field-validator type="requiredstring">
+			<message>Enter Pincode</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.mobileNo">
+		<field-validator type="requiredstring">
+			<message>Enter MobileNo</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">^[0-9]{10}$</param>
+			<message>The Mobile Number must be 10 digits</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.emailId">
+		<field-validator type="requiredstring">
+			<message>Enter Email-Id</message>
+		</field-validator>
+	</field>
+	<field name="profilebean.password">
+		<field-validator type="requiredstring">
+			<message>Enter Password</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression">^{6}$</param>
+			<message>The Password must be of 6 characters</message>
+		</field-validator>
+	</field>
+</validators>

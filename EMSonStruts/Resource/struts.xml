@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+<package name="default" extends="struts-default" >
+
+
+    <action name="Login" class="com.wipro.Login">
+    <result name="success">/SuccessReg.jsp</result> 
+    <result name="error">/index.jsp</result> 
+    </action>
+    <action name="Authenticate" class="com.wipro.Authenticate">
+    <result name="success">/EmployeeHomePage.jsp</result> 
+    <result name="error">/index.jsp</result> 
+    </action>
+    
+    
+    <action name="View" class="com.wipro.Login" method="DisplayMethod" >
+    <result name="success">/display.jsp</result> 
+     </action>
+    
+    <action name="view1" class="com.wipro.Login" method="DisplaybyID" >
+    <result name="success">/displaybyid.jsp</result> 
+    <result name="error">/errorviewbyid.jsp</result>
+    </action>
+    
+    <action name="viewid" class="com.wipro.viewid" >
+    <result name="success">/viewbyid.jsp</result> 
+    </action>
+    
+    <action name="Logout" class="com.wipro.Logout">
+    <result name="success">/index.jsp</result> 
+    </action>
+    
+    <action name="Redirect" class="com.wipro.Redirect">
+    <result name="success">/Registration.jsp</result> 
+    </action>
+    
+    <action name="Regsubmit" class="com.wipro.Regsubmit">
+    <result name="success">/EmployeeHomePage.jsp</result> 
+    </action>
+    
+    <action name="gotohomepage" class="com.wipro.Redirect">
+    <result name="success">/EmployeeHomePage.jsp</result> 
+    </action>
+    
+    
+  </package>
+  </struts>
