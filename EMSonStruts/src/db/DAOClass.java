@@ -19,7 +19,7 @@ public class DAOClass {
 				System.out.println("1");
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				System.out.println("2");
-	             con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","omarin7om");
+	             con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","omarindam77om");
 				System.out.println("3");
 			}
 			catch(Exception e) {
