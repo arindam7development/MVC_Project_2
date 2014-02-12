@@ -1,18 +1,3 @@
-/* 
- * <Copyright information>
- *
- * <Wipro Technologies >
- *
- * File Name: DBUtil.java
- *
- * <Short Description- This class is responsible for the Database connection establishment.>
- *
- * Version Number: 1.0.0
- *
- * Created Date: 20 08 2013  
- *
- * <Modification History>
- */
 
 package com.wipro.frs.util;
 
@@ -22,10 +7,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * @author 
- *
- */
+
 public class DBUtil {
 	// settings required to connect to database using Type1 driver
 
